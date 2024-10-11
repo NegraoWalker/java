@@ -1,4 +1,4 @@
-package beginner.examples.devsuperior.datastructures;
+package beginner.examples.devsuperior.datastructures.topicos.iniciais;
 
 public class Product {
     private String name;
