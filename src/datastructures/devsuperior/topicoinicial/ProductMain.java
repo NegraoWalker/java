@@ -1,4 +1,4 @@
-package beginner.datastructures.devsuperior.topicoinicial;
+package datastructures.devsuperior.topicoinicial;
 
 public class ProductMain {
     public static void main(String[] args) {

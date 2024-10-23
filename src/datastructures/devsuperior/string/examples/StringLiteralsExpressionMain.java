@@ -1,4 +1,4 @@
-package beginner.datastructures.devsuperior.string;
+package datastructures.devsuperior.string.examples;
 
 import java.util.Locale;
 
