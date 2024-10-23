@@ -1,6 +1,4 @@
-package beginner.examples.devsuperior.datastructures.string;
-
-import java.util.Locale;
+package beginner.datastructures.devsuperior.string;
 
 public class StringFunctions2Main {
     public static void main(String[] args) {

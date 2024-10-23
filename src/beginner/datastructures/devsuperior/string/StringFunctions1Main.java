@@ -1,4 +1,4 @@
-package beginner.examples.devsuperior.datastructures.string;
+package beginner.datastructures.devsuperior.string;
 
 public class StringFunctions1Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package beginner.examples.devsuperior.datastructures.string.exercises;
+package beginner.datastructures.devsuperior.string.exercises;
 
 import java.util.Locale;
 import java.util.Scanner;
