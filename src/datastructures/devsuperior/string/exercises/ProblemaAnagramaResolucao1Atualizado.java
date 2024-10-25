@@ -1,8 +1,9 @@
 package datastructures.devsuperior.string.exercises;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class ProblemaAnagrama {
+public class ProblemaAnagramaResolucao1Atualizado {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s, t;
@@ -22,19 +23,12 @@ public class ProblemaAnagrama {
             return false;
         }
 
-        int[] count = new int[26];
+        char[] arrayS = s.toCharArray(); //Transformando a String s em um array de caracteres
+        char[] arrayT = t.toCharArray(); //Transformando a String t em um array de caracteres
 
-        for (int i = 0; i < s.length(); i++) {
-            count[s.charAt(i) - 'a']++;  // Incrementa contagem para 's'
-            count[t.charAt(i) - 'a']--;  // Decrementa contagem para 't'
-        }
+        Arrays.sort(arrayS); //Ordenando o array s em ordem alfabética
+        Arrays.sort(arrayT); //Ordenando o array t em ordem alfabética
 
-        for (int c : count) {
-            if (c != 0) {
-                return false;  // Se qualquer contagem for diferente de zero, não é anagrama
-            }
-        }
-
-        return true;
+        return Arrays.equals(arrayS, arrayT);
     }
 }
