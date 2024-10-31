@@ -1,31 +1,33 @@
 package datastructures.devsuperior.string.exercises;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class ProblemaPrefixoComum {
     public static void main(String[] args) {
-
+        System.out.println("\"" + longestCommonPrefix(new String[] { "flower", "flow", "flight" }) + "\"");
+        System.out.println("\"" + longestCommonPrefix(new String[] { "dog","racecar","car" }) + "\"");
     }
-
 
 
     public static String longestCommonPrefix(String[] v) {
-
-        Arrays.sort(v);
-        String[] firstElement = new String[]{v[0]};
-        String[] lastElement = new String[]{v[v.length - 1]};
-        String[] result = new String[]{};
-
-        for (int i = 0; i < Math.min(firstElement.length, lastElement.length); i++) {
-            if (firstElement[i] != lastElement[i]) {
-
-            }
+        if (v == null || v.length == 0) {
+            return "";
         }
 
+        Arrays.sort(v);
+        String first = v[0];
+        String last = v[v.length - 1];
+        StringBuilder result = new StringBuilder();
 
+        for (int i = 0; i < Math.min(first.length(), last.length()); i++) {
+            if (first.charAt(i) != last.charAt(i)) {
+                return result.toString();
+            }
+            result.append(first.charAt(i));
+        }
+        return result.toString();
     }
+
 }
 
 
